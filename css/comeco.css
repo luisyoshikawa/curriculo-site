@@ -1,0 +1,103 @@
+/*formatação geral*/
+body{
+	background-color;
+	font-family: "Courier Prime";
+}
+
+h1, h1 , h2{
+	margin: 0;
+	font-family: "Courier Prime";
+	font-weight: 700;
+}
+
+p{
+	font-family: "Courier Prime";
+
+}
+
+/*cabecalho*/
+
+.logo img{
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	padding: 30px;
+
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	padding: 2%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+/*header*/ 
+
+header{
+	background-image: url('../img/python.jpeg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+
+.botao{
+	color: white;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: black;
+	font-size: 0.8em;
+	border-radius: 20%;
+
+}
+
+@media screen and (min-width: 768px){
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%; 
+	}
+	/*header*/
+	header{
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+
+}
