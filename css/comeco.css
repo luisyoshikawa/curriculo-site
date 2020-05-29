@@ -1,7 +1,8 @@
 /*formatação geral*/
 body{
-	background-color;
+	background-color:black;
 	font-family: "Courier Prime";
+	color: white;
 }
 
 h1, h1 , h2{
@@ -12,6 +13,10 @@ h1, h1 , h2{
 
 p{
 	font-family: "Courier Prime";
+}
+
+.container{
+	width: 100%;
 
 }
 
@@ -84,6 +89,111 @@ header p{
 
 }
 
+/*SOBRE*/
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+#sobre h2{
+	margin-top: 20px;
+	font-size: 2em;
+}
+.foto img{
+	width: 50%;
+	float: center;
+	border-radius: 20%;
+}
+.foto{
+	float: center;
+	width: 50%;
+	border-radius: 20%;
+}
+.texto{
+	float: center;
+	width: 50%;
+}
+
+/*ESPECIALIDADES*/
+
+#especialidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0  auto;
+}
+
+#especialidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+
+}
+#especialidades p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2em;
+}
+#especialidades img{
+	margin:10px 0;
+	border-radius: 20%;
+}
+#especialidades h2{
+	font-size: 2em;
+}
+
+/*COMPETENCIAS*/
+
+#competencias{
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	padding-top:20px;
+	margin-left: 20px;
+	margin-right: 20px; 
+}
+
+#competencias h2{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size:2em;
+	text-align: center; 
+}
+
+#competencias h3,p{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size:1em;
+	text-align: center; 
+}
+
+#competencias a{
+	text-decoration:none;
+}
+
+#competencias img{
+	width: 100%;
+	margin-bottom: 0;
+
+}
+
+#competencias .comp p{
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+	border-radius: 15%;
+}
+
 @media screen and (min-width: 768px){
 	nav {
 		flex-direction: row;
@@ -96,8 +206,60 @@ header p{
 	/*header*/
 	header{
 		height: 600px;
-		height: 60vh;
 		justify-content: center;
 	}
 
+	/*SOBRE*/
+	#sobre{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		height: 90vh;
+		justify-content: center;
+		min-height: 80vh;
+	}
+	#sobre h2{
+		text-align: center;
+		width: 100%;
+	}
+	#sobre div{
+		flex-grow: 1;
+		flex-basis: 300px;
+		padding: 0 10px;
+	}
+	/*ESPECIALIDADES*/
+	#especialidades{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+
+	#especialidades h2{
+		text-align: center;
+		width: 100%;
+	}
+
+	#especialidades div{
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	#competencias{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#competencias h2,h3{
+		width: 100%;
+		text-align: center;
+	}
+
+	#competencias .comp{
+		width: 33.33333333%;
+		text-align: center;
+	}
 }
