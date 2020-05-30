@@ -1,0 +1,276 @@
+/*formatação geral*/
+body{
+	background-color:black;
+	font-family: "Courier Prime";
+	color: white;
+}
+
+h1, h1 , h2{
+	margin: 0;
+	font-family: "Courier Prime";
+	font-weight: 700;
+}
+
+p{
+	font-family: "Courier Prime";
+}
+
+.container{
+	width: 100%;
+
+}
+
+/*cabecalho*/
+
+.logo img{
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	padding: 30px;
+
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	padding: 2%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+/*header*/ 
+
+header{
+	background-image: url('../img/python.jpeg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+
+.botao{
+	color: white;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: black;
+	font-size: 0.8em;
+	border-radius: 20px;
+
+}
+
+/*SOBRE*/
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	color: white;
+	padding: 30px 30px;
+}
+#sobre h2{
+	margin-top: 20px;
+	font-size: 2em;
+}
+.foto img{
+	width: 50%;
+	float: center;
+	border-radius: 20%;
+	text-align: center;
+	position: relative;
+}
+.foto{
+	float: center;
+	width: 80%;
+	border-radius: 20%;
+	text-align: center;
+	padding: 10px;
+}
+.texto{
+	float: center;
+	width: 50%;
+	text-align: center; 
+}
+
+/*ESPECIALIDADES*/
+
+#especialidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0  auto;
+}
+
+#especialidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+
+}
+#especialidades p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2em;
+}
+#especialidades img{
+	margin:10px 0;
+	border-radius: 20%;
+	padding-bottom: 10px;
+}
+#especialidades h2{
+	font-size: 2em;
+}
+
+/*COMPETENCIAS*/
+
+#competencias{
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	padding-top:20px;
+	margin-left: 20px;
+	margin-right: 20px; 
+}
+
+#competencias h2{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size:2em;
+	text-align: center; 
+}
+
+#competencias h3,p{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size:1em;
+	text-align: center; 
+}
+
+#competencias a{
+	text-decoration:none;
+}
+
+#competencias img{
+	width: 50%;
+	margin-bottom: 0;
+	text-align: center;
+	float: center;
+	position: relative;
+}
+
+#competencias .comp p{
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+	border-radius: 15px;
+}
+
+@media screen and (min-width: 768px){
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%; 
+	}
+	/*header*/
+	header{
+		height: 600px;
+		justify-content: center;
+	}
+
+	/*SOBRE*/
+	#sobre{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		height: 90vh;
+		justify-content: center;
+		min-height: 80vh;
+	}
+	#sobre h2{
+		text-align: center;
+		width: 100%;
+	}
+	#sobre div{
+		flex-grow: 1;
+		flex-basis: 300px;
+		padding: 0 10px;
+	}
+	/*ESPECIALIDADES*/
+	#especialidades{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+
+	#especialidades h2{
+		text-align: center;
+		width: 100%;
+	}
+
+	#especialidades div{
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	#competencias{
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	#competencias h2,h3{
+		width: 100%;
+		text-align: center;
+	}
+
+	#competencias .comp{
+		width: 33.33333333333333333%;
+		text-align: center;
+		border-radius: 100px;
+	}
+}
